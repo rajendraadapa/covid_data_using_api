@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>World COVID-19 Data</h1>
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Country</th>
+            <th>Continent</th>
+            <th>Cases</th>
+            <th>Deaths</th>
+            <th>Recovered</th>
+        </tr>
+        {% for data in covid_data %}
+        <tr>
+            <td>{{ data[0] }}</td>
+            <td>{{ data[1] }}</td>
+            <td>{{ data[2] }}</td>
+            <td>{{ data[3] }}</td>
+            <td>{{ data[4] }}</td>
+            <td>{{ data[5] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+    {% if data %}
+        <h1>{{ data[1] }}</h1>
+        <p>{{data[1]}}, situated in {{data[2]}}, has reported {{data[3]}} COVID-19 cases, with {{data[4]}} deaths and {{data[5]}} recoveries. </p>
+        
+    {% else %}
+        <p>Data not found</p>
+    {% endif %}
+
+{% endblock %}

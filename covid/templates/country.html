@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Welcome to our world's COVID-19 information</h1>
+    <form action="/country" method="POST">
+        <label for="country">Enter Country Name:</label>
+        <input type="text" name="country" id="country">
+        <input type="submit" value="Submit">
+    </form>
+{% endblock %}
